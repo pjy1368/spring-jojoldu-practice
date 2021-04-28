@@ -63,10 +63,10 @@ public class PostsApiControllerTest {
     @Test
     public void Posts_수정된다() throws Exception {
         final Posts savePosts = postsRepository.save(Posts.builder()
-        .title("title")
-        .content("content")
-        .author("author")
-        .build());
+            .title("title")
+            .content("content")
+            .author("author")
+            .build());
 
         final Long updateId = savePosts.getId();
         final String expectedTitle = "title2";

@@ -45,10 +45,10 @@ public class PostsRepositoryTest {
     public void BaseTimeEntity_등록() {
         final LocalDateTime now = LocalDateTime.of(2019, 6, 4, 0, 0, 0);
         postsRepository.save(Posts.builder()
-        .title("title")
-        .content("content")
-        .author("author")
-        .build());
+            .title("title")
+            .content("content")
+            .author("author")
+            .build());
 
         final List<Posts> postsList = postsRepository.findAll();
 
